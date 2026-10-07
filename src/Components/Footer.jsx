@@ -75,7 +75,7 @@ function Footer() {
             </li>
             <li>
               <MapPin size={16} />
-              <span>Karachi, Pakistan</span>
+              <span>Oman</span>
             </li>
           </ul>
           <a className="footer-email-link" href="mailto:info@abuzahartrading.com">
