@@ -1,7 +1,7 @@
 .scroll-progress {
   position: fixed;
   z-index: 15;
-  right: max(22px, calc((100vw - var(--content-width)) / 2));
+  right: 24px;
   bottom: 24px;
   width: 48px;
   height: 48px;
