@@ -1,0 +1,74 @@
+.scroll-progress {
+  position: fixed;
+  z-index: 15;
+  right: max(22px, calc((100vw - var(--content-width)) / 2));
+  bottom: 24px;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  color: #fff;
+  border: 0;
+  border-radius: 50%;
+  background: var(--navy);
+  box-shadow: 0 5px 18px rgb(7 31 67 / 22%);
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease,
+    background 180ms ease;
+}
+
+.scroll-progress-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.scroll-progress:hover {
+  background: var(--accent);
+}
+
+.scroll-progress-ring {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  transform: rotate(-90deg);
+}
+
+.scroll-progress-track,
+.scroll-progress-value {
+  fill: none;
+  stroke-width: 2;
+}
+
+.scroll-progress-track {
+  stroke: rgb(255 255 255 / 30%);
+}
+
+.scroll-progress-value {
+  stroke: #ed424b;
+  stroke-dasharray: 100;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 100ms linear;
+}
+
+.scroll-progress:focus-visible {
+  outline-color: var(--accent);
+  outline-offset: 4px;
+}
+
+@media (max-width: 480px) {
+  .scroll-progress {
+    right: 18px;
+    bottom: 18px;
+    width: 44px;
+    height: 44px;
+  }
+}

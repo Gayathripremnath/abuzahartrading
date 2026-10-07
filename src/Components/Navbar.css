@@ -27,8 +27,8 @@
 }
 
 .brand-logo {
-  width: 205px;
-  height: 66px;
+  width: 270px;
+  height: 76px;
   object-fit: contain;
   object-position: left center;
 }
@@ -184,6 +184,11 @@
 @media (max-width: 480px) {
   .container {
     width: calc(100% - 36px);
+  }
+
+  .brand-logo {
+    width: 235px;
+    height: 66px;
   }
 
   .nav-panel {

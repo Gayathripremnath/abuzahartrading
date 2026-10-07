@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { ArrowUpRight, Menu, X } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import logo from '../assets/logo.jpeg'
+import logo from '../assets/logo-transparent.png'
 import './Navbar.css'
 
 const links = [
